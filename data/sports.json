@@ -1,0 +1,6 @@
+[
+  { "id": "nhl", "name": "National Hockey League", "league": "NHL", "category": "team", "origins": ["US", "CA"] },
+  { "id": "nba", "name": "National Basketball Association", "league": "NBA", "category": "team", "origins": ["US"] },
+  { "id": "mlb", "name": "Major League Baseball", "league": "MLB", "category": "team", "origins": ["US"] },
+  { "id": "nfl", "name": "National Football League", "league": "NFL", "category": "team", "origins": ["US"] }
+]

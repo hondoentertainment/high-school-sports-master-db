@@ -1,0 +1,17 @@
+{
+  "name": "high-school-sports-master-db",
+  "version": "0.1.0",
+  "description": "Master database: high schools + professional athletes (US & international)",
+  "type": "module",
+  "scripts": {
+    "load": "tsx scripts/load-master-db.ts",
+    "ingest": "python scripts/ingest_all_players.py"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "@nhl-api/players": "^3.1.4"
+  }
+}

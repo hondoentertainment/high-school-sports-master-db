@@ -11,3 +11,6 @@ Thumbs.db
 
 # Bulk CSV exports (can be large)
 data/exports/
+
+# Legacy monolithic athlete file (replaced by per-league athletes-nba.json, etc.)
+data/athletes.json

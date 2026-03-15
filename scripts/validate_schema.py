@@ -31,11 +31,21 @@ def load_json(name: str) -> list | dict:
         return json.load(f)
 
 
+def load_athletes() -> list:
+    """Load athletes from per-league files."""
+    merged = []
+    for name in ["athletes-nba.json", "athletes-nfl.json", "athletes-mlb.json", "athletes-nhl.json"]:
+        data = load_json(name)
+        if isinstance(data, list):
+            merged.extend(data)
+    return merged
+
+
 def main() -> int:
     errors: list[str] = []
 
     # Load data
-    athletes = load_json("athletes.json")
+    athletes = load_athletes()
     schools = load_json("schools.json")
     colleges_raw = load_json("colleges.json")
     colleges = colleges_raw if isinstance(colleges_raw, list) else []

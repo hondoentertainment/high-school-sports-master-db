@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "load": "tsx scripts/load-master-db.ts",
+    "split-athletes": "tsx scripts/split-athletes.ts",
     "export": "tsx scripts/export_csv.ts",
     "ingest": "python scripts/ingest_all_players.py",
+    "enrich": "python scripts/enrich_wikidata.py",
     "audit": "python scripts/validate_schema.py && python scripts/audit_database.py",
     "validate": "python scripts/validate_schema.py",
     "build:education": "python scripts/build_education_index.py",

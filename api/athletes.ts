@@ -1,6 +1,6 @@
 /**
  * GET /api/athletes
- * Query params: league (NHL|NBA|MLB|NFL), sport, limit (default 50), offset (default 0)
+ * Query params: league, sport, limit (default 50), offset, q/search (name), position, country/nationality
  * Returns JSON array of athletes.
  */
 import type { VercelRequest, VercelResponse } from "@vercel/node";
@@ -30,6 +30,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     const league = req.query.league as string | undefined;
     const sport = req.query.sport as string | undefined;
+    const searchTerm = (req.query.q ?? req.query.search) as string | undefined;
+    const position = req.query.position as string | undefined;
+    const countryFilter = (req.query.country ?? req.query.nationality) as string | undefined;
     const limit = Math.min(Math.max(1, parseInt(String(req.query.limit ?? 50), 10) || 50), 500);
     const offset = Math.max(0, parseInt(String(req.query.offset ?? 0), 10) || 0);
 
@@ -47,6 +50,25 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (sport) {
       const lower = sport.toLowerCase();
       list = list.filter((a) => a.sport?.toLowerCase() === lower);
+    }
+
+    if (searchTerm && searchTerm.trim()) {
+      const term = searchTerm.trim().toLowerCase();
+      list = list.filter((a) => a.name?.toLowerCase().includes(term));
+    }
+
+    if (position && position.trim()) {
+      const pos = position.trim();
+      list = list.filter((a) => a.position?.toUpperCase().includes(pos.toUpperCase()));
+    }
+
+    if (countryFilter && countryFilter.trim()) {
+      const code = countryFilter.trim().toUpperCase();
+      list = list.filter(
+        (a) =>
+          (a.nationality && a.nationality.toUpperCase() === code) ||
+          (a.countryOfBirth && a.countryOfBirth.toUpperCase() === code)
+      );
     }
 
     const total = list.length;

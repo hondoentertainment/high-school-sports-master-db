@@ -6,7 +6,7 @@ Reference: `schema/types.ts`. All collections use camelCase in JSON files.
 
 ## athletes
 
-**File:** `data/athletes.json`  
+**Files:** `data/athletes-nba.json`, `data/athletes-nfl.json`, `data/athletes-mlb.json`, `data/athletes-nhl.json` (per-league split)  
 **Type:** `ProfessionalAthlete[]`
 
 | Field | Type | Required | Description | Example |

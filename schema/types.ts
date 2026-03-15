@@ -60,6 +60,8 @@ export interface AthleteMetadata {
   pfrId?: string;
   /** Hockey-Reference player ID */
   hockeyReferenceId?: string;
+  /** Basketball-Reference player ID */
+  basketballReferenceId?: string;
   /** ESPN player ID */
   espnId?: string;
   [key: string]: unknown;

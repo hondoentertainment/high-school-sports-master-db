@@ -68,6 +68,6 @@ Each data source used by the ingest pipeline, with links, usage, and attribution
 
 ## Refresh cadence
 
-- **Ingest:** Run `npm run ingest` manually or on a schedule. Output written to `data/athletes.json`.
+- **Ingest:** Run `npm run ingest` manually or on a schedule. Output written to `data/athletes-nba.json`, `data/athletes-nfl.json`, `data/athletes-mlb.json`, and `data/athletes-nhl.json`.
 - **Metadata:** `data/ingest_metadata.json` (if present) records `lastIngestedAt` from the most recent successful ingest.
 - **Recommendation:** Refresh seasonally or after major league events ( drafts, retirements, new rosters ).

@@ -22,12 +22,25 @@ function loadJsonIfExists<T>(filename: string): T | undefined {
   return JSON.parse(readFileSync(path, "utf-8")) as T;
 }
 
+const ATHLETE_FILES = ["athletes-nba.json", "athletes-nfl.json", "athletes-mlb.json", "athletes-nhl.json"] as const;
+
+function loadAthletes(): MasterDatabase["athletes"] {
+  const merged: MasterDatabase["athletes"] = [];
+  for (const filename of ATHLETE_FILES) {
+    const path = join(DATA_DIR, filename);
+    if (!existsSync(path)) continue;
+    const list = JSON.parse(readFileSync(path, "utf-8")) as MasterDatabase["athletes"];
+    merged.push(...list);
+  }
+  return merged;
+}
+
 export function loadMasterDatabase(): MasterDatabase {
   const schoolCollegeLinks = loadJsonIfExists("school_college_links.json");
   return {
     schools: loadJson("schools.json"),
     colleges: loadJson("colleges.json"),
-    athletes: loadJson("athletes.json"),
+    athletes: loadAthletes(),
     sports: loadJson("sports.json"),
     affiliations: loadJson("affiliations.json"),
     educationAffiliations: loadJson("education_affiliations.json"),

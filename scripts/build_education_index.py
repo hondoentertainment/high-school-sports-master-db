@@ -84,6 +84,17 @@ def load_json(name: str):
         return json.load(file)
 
 
+def load_athletes() -> list:
+    """Load athletes from per-league files."""
+    merged = []
+    for name in ["athletes-nba.json", "athletes-nfl.json", "athletes-mlb.json", "athletes-nhl.json"]:
+        path = DATA_DIR / name
+        if path.exists():
+            data = load_json(name)
+            merged.extend(data if isinstance(data, list) else [])
+    return merged
+
+
 def save_json(name: str, payload) -> None:
     with open(DATA_DIR / name, "w", encoding="utf-8") as file:
         json.dump(payload, file, indent=2, ensure_ascii=False)
@@ -219,7 +230,7 @@ def build_school_lookup(schools: list[dict]) -> dict[str, dict]:
 
 
 def main() -> int:
-    athletes = load_json("athletes.json")
+    athletes = load_athletes()
     schools = load_json("schools.json")
     school_affiliations = load_json("affiliations.json")
     college_enrichment = load_college_enrichment()

@@ -21,6 +21,18 @@ def load_json(name: str):
         return json.load(file)
 
 
+def load_athletes() -> list:
+    """Load athletes from per-league files."""
+    merged = []
+    for name in ["athletes-nba.json", "athletes-nfl.json", "athletes-mlb.json", "athletes-nhl.json"]:
+        path = DATA_DIR / name
+        if path.exists():
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                merged.extend(data if isinstance(data, list) else [])
+    return merged
+
+
 def pct(missing: int, total: int) -> str:
     if total == 0:
         return "0.0%"
@@ -28,7 +40,7 @@ def pct(missing: int, total: int) -> str:
 
 
 def main() -> int:
-    athletes = load_json("athletes.json")
+    athletes = load_athletes()
     schools = load_json("schools.json")
     affiliations = load_json("affiliations.json")
 

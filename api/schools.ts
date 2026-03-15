@@ -1,6 +1,6 @@
 /**
  * GET /api/schools
- * Query params: league (NHL|NBA|MLB|NFL), limit (default 50), offset (default 0)
+ * Query params: league, limit (default 50), offset, q/search (school name)
  * Returns JSON array of high schools.
  */
 import type { VercelRequest, VercelResponse } from "@vercel/node";
@@ -29,11 +29,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     const league = req.query.league as string | undefined;
+    const searchTerm = (req.query.q ?? req.query.search) as string | undefined;
     const limit = Math.min(Math.max(1, parseInt(String(req.query.limit ?? 50), 10) || 50), 500);
     const offset = Math.max(0, parseInt(String(req.query.offset ?? 0), 10) || 0);
 
     const db = loadMasterDatabase();
     let list = db.schools;
+
+    if (searchTerm && searchTerm.trim()) {
+      const term = searchTerm.trim().toLowerCase();
+      list = list.filter((s) => s.name?.toLowerCase().includes(term));
+    }
 
     if (league) {
       const normalized = league.toUpperCase();

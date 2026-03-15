@@ -1,6 +1,6 @@
 /**
  * GET /api/colleges
- * Query params: limit (default 50), offset (default 0), country
+ * Query params: limit (default 50), offset, country, q/search (college name)
  * Returns JSON array of colleges/universities.
  */
 import type { VercelRequest, VercelResponse } from "@vercel/node";
@@ -26,11 +26,21 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     const country = req.query.country as string | undefined;
+    const searchTerm = (req.query.q ?? req.query.search) as string | undefined;
     const limit = Math.min(Math.max(1, parseInt(String(req.query.limit ?? 50), 10) || 50), 500);
     const offset = Math.max(0, parseInt(String(req.query.offset ?? 0), 10) || 0);
 
     const db = loadMasterDatabase();
     let list = db.colleges;
+
+    if (searchTerm && searchTerm.trim()) {
+      const term = searchTerm.trim().toLowerCase();
+      list = list.filter(
+        (c) =>
+          c.name?.toLowerCase().includes(term) ||
+          c.aliases?.some((alias) => alias.toLowerCase().includes(term))
+      );
+    }
 
     if (country) {
       const upper = country.toUpperCase();

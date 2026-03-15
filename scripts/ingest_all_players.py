@@ -23,7 +23,12 @@ import requests
 # Project root
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
-OUTPUT = DATA_DIR / "athletes.json"
+ATHLETE_FILES = {
+    "NBA": DATA_DIR / "athletes-nba.json",
+    "NFL": DATA_DIR / "athletes-nfl.json",
+    "MLB": DATA_DIR / "athletes-mlb.json",
+    "NHL": DATA_DIR / "athletes-nhl.json",
+}
 CACHE_DIR = ROOT / ".cache"
 
 
@@ -328,6 +333,38 @@ def load_json_with_git_fallback(path: Path, git_path: str) -> list[dict]:
         pass
 
     return load_json_from_git(git_path)
+
+
+def load_athletes_from_disk() -> list[dict]:
+    """Load athletes from per-league files or legacy athletes.json."""
+    split_paths = [
+        DATA_DIR / "athletes-nba.json",
+        DATA_DIR / "athletes-nfl.json",
+        DATA_DIR / "athletes-mlb.json",
+        DATA_DIR / "athletes-nhl.json",
+    ]
+    if all(p.exists() for p in split_paths):
+        merged = []
+        for p in split_paths:
+            try:
+                with open(p, "r", encoding="utf-8") as f:
+                    merged.extend(json.load(f))
+            except Exception:
+                pass
+        return merged if merged else load_json_with_git_fallback(DATA_DIR / "athletes.json", "data/athletes.json")
+    return load_json_with_git_fallback(DATA_DIR / "athletes.json", "data/athletes.json")
+
+
+def load_athletes_from_git() -> list[dict]:
+    """Load athletes from git HEAD (split files or legacy athletes.json)."""
+    try:
+        nba = load_json_from_git("data/athletes-nba.json")
+        merged = list(nba)
+        for git_path in ["data/athletes-nfl.json", "data/athletes-mlb.json", "data/athletes-nhl.json"]:
+            merged.extend(load_json_from_git(git_path))
+        return merged
+    except Exception:
+        return load_json_from_git("data/athletes.json")
 
 
 # --- NBA ---
@@ -961,10 +998,9 @@ def main():
     os.makedirs(DATA_DIR, exist_ok=True)
 
     # Load existing athletes and affiliations so school-linked athlete IDs remain stable.
-    existing_path = DATA_DIR / "athletes.json"
     affiliations_path = DATA_DIR / "affiliations.json"
-    existing = load_json_with_git_fallback(existing_path, "data/athletes.json")
-    committed_existing = load_json_from_git("data/athletes.json")
+    existing = load_athletes_from_disk()
+    committed_existing = load_athletes_from_git()
     affiliations = load_json_with_git_fallback(affiliations_path, "data/affiliations.json")
 
     print("Fetching NBA players...")
@@ -1039,8 +1075,16 @@ def main():
 
     all_athletes.sort(key=lambda a: (a.get("league", ""), a.get("id", "")))
 
-    with open(OUTPUT, "w", encoding="utf-8") as f:
-        json.dump(all_athletes, f, indent=2, ensure_ascii=False, allow_nan=False)
+    by_league: dict[str, list[dict]] = {"NBA": [], "NFL": [], "MLB": [], "NHL": []}
+    for a in all_athletes:
+        league = a.get("league", "")
+        if league in by_league:
+            by_league[league].append(a)
+
+    for league, athletes in by_league.items():
+        path = ATHLETE_FILES[league]
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(athletes, f, indent=2, ensure_ascii=False, allow_nan=False)
 
     metadata_path = DATA_DIR / "ingest_metadata.json"
     with open(metadata_path, "w", encoding="utf-8") as f:
@@ -1051,10 +1095,9 @@ def main():
         )
 
     print(f"\nTotal: {len(all_athletes)} athletes")
-    print(f"Written to {OUTPUT}")
     for league in ["NBA", "NFL", "MLB", "NHL"]:
-        count = sum(1 for a in all_athletes if a.get("league") == league)
-        print(f"  {league}: {count}")
+        count = len(by_league[league])
+        print(f"  {league}: {count} -> {ATHLETE_FILES[league].name}")
 
 
 if __name__ == "__main__":

@@ -24,7 +24,10 @@ High School Sports/
 │   ├── schema.json     # JSON Schema (athletes, schools, colleges, affiliations)
 │   ├── schools.json     # High schools (US & international)
 │   ├── colleges.json    # Normalized colleges / universities
-│   ├── athletes.json    # Central athlete database
+│   ├── athletes-nba.json   # NBA athletes
+│   ├── athletes-nfl.json   # NFL athletes
+│   ├── athletes-mlb.json   # MLB athletes
+│   ├── athletes-nhl.json   # NHL athletes
 │   ├── sports.json      # League definitions
 │   ├── affiliations.json # School ↔ Athlete links
 │   ├── education_affiliations.json # Athlete ↔ school/college links
@@ -92,15 +95,56 @@ The ingest pipeline uses `.cache/` to store expensive profile lookups so repeate
 
 ## Read-only API
 
-Deploy to Vercel for serverless read-only endpoints:
+Deploy to Vercel for serverless read-only endpoints. All endpoints are public; no API keys required.
 
 | Endpoint | Query params |
 |----------|--------------|
-| `GET /api/athletes` | `league`, `sport`, `limit` (default 50), `offset` |
-| `GET /api/schools` | `league`, `limit`, `offset` |
-| `GET /api/colleges` | `country`, `limit`, `offset` |
+| `GET /api/athletes` | `league`, `sport`, `limit` (default 50), `offset`, `q`/`search` (name), `position`, `country`/`nationality` |
+| `GET /api/schools` | `league`, `limit`, `offset`, `q`/`search` (school name) |
+| `GET /api/colleges` | `country`, `limit`, `offset`, `q`/`search` (college name) |
 
-Example: `/api/athletes?league=NBA&limit=10`
+**Examples (curl):**
+```bash
+# Athletes in NBA named "Lebron"
+curl "https://high-school-sports-xxx.vercel.app/api/athletes?q=lebron&league=NBA"
+
+# Athletes by position (e.g. QB, PG, Pitcher)
+curl "https://high-school-sports-xxx.vercel.app/api/athletes?position=QB&league=NFL&limit=10"
+
+# Athletes by country/nationality (ISO code)
+curl "https://high-school-sports-xxx.vercel.app/api/athletes?country=CA&league=NHL"
+
+# Search schools by name
+curl "https://high-school-sports-xxx.vercel.app/api/schools?q=St.+Vincent&league=NBA"
+
+# Search colleges by name
+curl "https://high-school-sports-xxx.vercel.app/api/colleges?q=Ohio&country=US"
+```
+
+**Examples (fetch):**
+```javascript
+// Athletes matching name + league
+const res = await fetch('https://high-school-sports-xxx.vercel.app/api/athletes?q=lebron&league=NBA');
+const { data, meta } = await res.json();
+
+// Schools by search term
+const schools = await fetch('/api/schools?search=Oak+Hill&limit=5').then(r => r.json());
+```
+
+## Deployment
+
+1. **Deploy to Vercel**: Run `vercel` (or `vercel --prod` for production).
+2. **Connect this repo to Vercel** for automatic deploys on push.
+
+| Environment | URL |
+|-------------|-----|
+| Production | `https://high-school-sports-xxx.vercel.app` |
+| Preview | Per-branch preview URLs from Vercel |
+
+**Manual deploy steps:**
+1. Install Vercel CLI: `npm i -g vercel`
+2. Login: `vercel login`
+3. Deploy: `vercel --prod`
 
 ## Bulk exports
 
@@ -127,7 +171,7 @@ Because each data file is an array, use a wrapper schema. Example `validate-athl
   "items": { "$ref": "./data/schema.json#/definitions/professionalAthlete" }
 }
 ```
-Then: `ajv validate -s validate-athletes.json -d data/athletes.json`
+Then: `ajv validate -s validate-athletes.json -d data/athletes-nba.json` (or validate each league file separately)
 
 **Using Python (jsonschema):**
 ```python
@@ -135,15 +179,15 @@ import json
 from jsonschema import validate, RefResolver
 with open("data/schema.json") as f:
     schema = json.load(f)
-with open("data/athletes.json") as f:
-    data = json.load(f)
-validate(data, {"type": "array", "items": schema["definitions"]["professionalAthlete"]}, resolver=RefResolver.from_schema(schema))
+for fname in ["athletes-nba.json", "athletes-nfl.json", "athletes-mlb.json", "athletes-nhl.json"]:
+    with open(f"data/{fname}") as f:
+        data = json.load(f)
+    validate(data, {"type": "array", "items": schema["definitions"]["professionalAthlete"]}, resolver=RefResolver.from_schema(schema))
 ```
 
 ## Repository Notes
 
-- `data/athletes.json` is checked in so the repository contains a ready-to-use central database.
-- The generated athlete dataset is large but remains under GitHub's normal single-file limit.
+- Athlete data is split into `data/athletes-nba.json`, `data/athletes-nfl.json`, `data/athletes-mlb.json`, and `data/athletes-nhl.json` to stay under GitHub's 100 MB file limit; scripts merge them at load time.
 - Refreshing the dataset is script-driven, so source code and generated outputs stay reproducible.
 - `data/education_affiliations.json` is the normalized bridge table for athlete-to-high-school and athlete-to-college relationships.
 - Existing curated high school links from `data/affiliations.json` are preserved and mirrored into the normalized education layer.
@@ -181,7 +225,7 @@ Latest audit highlights:
 ## Adding Data
 
 1. Add schools to `data/schools.json` (include `leagues` array)
-2. Add athletes to `data/athletes.json` (include `league`)
+2. Add athletes to the appropriate `data/athletes-{league}.json` (NBA, NFL, MLB, NHL)
 3. Link them in `data/affiliations.json` (include `league`)
 
 Use consistent IDs (`s-XXX` for schools, `a-{league}-XXX` for athletes).

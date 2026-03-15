@@ -2,8 +2,12 @@ node_modules/
 __pycache__/
 *.pyc
 *.pyo
+.cache/
 .venv/
 venv/
 .env
 .DS_Store
 Thumbs.db
+
+# Bulk CSV exports (can be large)
+data/exports/

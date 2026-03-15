@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/high-school-sports/schema",
+  "title": "High School Sports Master Database",
+  "description": "Schema for athletes, schools, colleges, and affiliations",
+  "definitions": {
+    "countryCode": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-2 (US, GB, AU, etc.)",
+      "minLength": 2,
+      "maxLength": 2
+    },
+    "league": {
+      "type": "string",
+      "enum": ["NHL", "NBA", "MLB", "NFL"]
+    },
+    "highSchool": {
+      "type": "object",
+      "required": ["id", "name", "city", "country"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "city": { "type": "string" },
+        "country": { "$ref": "#/definitions/countryCode" },
+        "region": { "type": "string" },
+        "sportFocus": { "type": "array", "items": { "type": "string" } },
+        "leagues": { "type": "array", "items": { "$ref": "#/definitions/league" } },
+        "founded": { "type": "integer" },
+        "metadata": { "type": "object" }
+      }
+    },
+    "athleteEducation": {
+      "type": "object",
+      "properties": {
+        "highSchool": { "type": "array", "items": { "type": "string" } },
+        "prepSchool": { "type": "array", "items": { "type": "string" } },
+        "academy": { "type": "array", "items": { "type": "string" } },
+        "college": { "type": "array", "items": { "type": "string" } },
+        "lastAffiliation": { "type": "string" }
+      }
+    },
+    "college": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "country": { "$ref": "#/definitions/countryCode" },
+        "region": { "type": "string" },
+        "city": { "type": "string" },
+        "metadata": { "type": "object" }
+      }
+    },
+    "professionalAthlete": {
+      "type": "object",
+      "required": ["id", "name", "league", "sport"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "league": { "$ref": "#/definitions/league" },
+        "sport": { "type": "string" },
+        "nationality": { "$ref": "#/definitions/countryCode" },
+        "countryOfBirth": { "$ref": "#/definitions/countryCode" },
+        "birthDate": { "type": "string", "format": "date" },
+        "birthCity": { "type": "string" },
+        "birthRegion": { "type": "string" },
+        "yearsActive": { "type": "string" },
+        "era": { "type": "string" },
+        "position": { "type": "string" },
+        "height": { "type": "string" },
+        "weight": { "type": ["string", "number"] },
+        "handedness": { "type": "string" },
+        "teams": { "type": "array", "items": { "type": "string" } },
+        "active": { "type": "boolean" },
+        "education": { "$ref": "#/definitions/athleteEducation" },
+        "awards": { "type": "array", "items": { "type": "string" } },
+        "honors": { "type": "array", "items": { "type": "string" } },
+        "bio": { "type": "string" },
+        "metadata": { "type": "object" }
+      }
+    },
+    "sport": {
+      "type": "object",
+      "required": ["id", "name", "league"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "league": { "$ref": "#/definitions/league" },
+        "category": { "type": "string" },
+        "origins": { "type": "array", "items": { "$ref": "#/definitions/countryCode" } }
+      }
+    },
+    "affiliationType": {
+      "type": "string",
+      "enum": ["alumni", "historic", "honorary", "feeder"]
+    },
+    "affiliation": {
+      "type": "object",
+      "required": ["id", "schoolId", "athleteId", "type", "league", "sport"],
+      "properties": {
+        "id": { "type": "string" },
+        "schoolId": { "type": "string" },
+        "athleteId": { "type": "string" },
+        "type": { "$ref": "#/definitions/affiliationType" },
+        "league": { "$ref": "#/definitions/league" },
+        "sport": { "type": "string" },
+        "yearsAttended": { "type": "string" },
+        "graduated": { "type": "integer" },
+        "notes": { "type": "string" },
+        "sources": { "type": "array", "items": { "type": "string" } },
+        "metadata": { "type": "object" }
+      }
+    },
+    "educationAffiliationType": {
+      "type": "string",
+      "enum": ["highSchool", "prepSchool", "academy", "college"]
+    },
+    "educationAffiliation": {
+      "type": "object",
+      "required": ["id", "athleteId", "league", "educationType", "institutionName", "source"],
+      "properties": {
+        "id": { "type": "string" },
+        "athleteId": { "type": "string" },
+        "league": { "$ref": "#/definitions/league" },
+        "educationType": { "$ref": "#/definitions/educationAffiliationType" },
+        "institutionId": { "type": "string" },
+        "institutionName": { "type": "string" },
+        "source": { "type": "string", "enum": ["school_affiliations", "athlete_education"] },
+        "yearsAttended": { "type": "string" },
+        "graduated": { "type": "integer" },
+        "metadata": { "type": "object" }
+      }
+    }
+  }
+}

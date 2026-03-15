@@ -5,9 +5,15 @@
   "type": "module",
   "scripts": {
     "load": "tsx scripts/load-master-db.ts",
-    "ingest": "python scripts/ingest_all_players.py"
+    "export": "tsx scripts/export_csv.ts",
+    "ingest": "python scripts/ingest_all_players.py",
+    "audit": "python scripts/validate_schema.py && python scripts/audit_database.py",
+    "validate": "python scripts/validate_schema.py",
+    "build:education": "python scripts/build_education_index.py",
+    "api:dev": "vercel dev"
   },
   "devDependencies": {
+    "@vercel/node": "^3.2.0",
     "tsx": "^4.19.0",
     "typescript": "^5.3.0"
   },

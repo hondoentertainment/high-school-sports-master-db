@@ -11,10 +11,10 @@ const normalizedPlayers = players.map((player) => ({
   name: player.name,
   league: "NHL",
   sport: "hockey",
-  nationality: "",
-  countryOfBirth: "",
+  nationality: null,
+  countryOfBirth: null,
   yearsActive: null,
-  era: "modern",
+  era: null,
   position: null,
   teams: [],
   metadata: {

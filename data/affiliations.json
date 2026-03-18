@@ -1423,5 +1423,85 @@
       "derivedFromEducationAffiliationId": "edu-a-nba-78577-highSchool-dwight-morrow-high-school",
       "educationType": "highSchool"
     }
+  },
+  {
+    "id": "af-116",
+    "schoolId": "s-dominguez",
+    "athleteId": "a-nba-2199",
+    "type": "alumni",
+    "league": "NBA",
+    "sport": "basketball",
+    "notes": "Inferred from athlete education (highSchool).",
+    "sources": [
+      "athlete_education"
+    ],
+    "metadata": {
+      "derivedFromEducationAffiliationId": "edu-a-nba-2199-highSchool-dominguez-high-school",
+      "educationType": "highSchool"
+    }
+  },
+  {
+    "id": "af-117",
+    "schoolId": "s-south-kent",
+    "athleteId": "a-nba-2748",
+    "type": "alumni",
+    "league": "NBA",
+    "sport": "basketball",
+    "notes": "Inferred from athlete education (highSchool).",
+    "sources": [
+      "athlete_education"
+    ],
+    "metadata": {
+      "derivedFromEducationAffiliationId": "edu-a-nba-2748-highSchool-south-kent-high-school",
+      "educationType": "highSchool"
+    }
+  },
+  {
+    "id": "af-118",
+    "schoolId": "s-tennessee-military-academy",
+    "athleteId": "a-nfl-00-0006358",
+    "type": "alumni",
+    "league": "NFL",
+    "sport": "football",
+    "notes": "Inferred from athlete education (academy).",
+    "sources": [
+      "athlete_education"
+    ],
+    "metadata": {
+      "derivedFromEducationAffiliationId": "edu-a-nfl-00-0006358-academy-tennessee-military-academy",
+      "educationType": "academy"
+    }
+  },
+  {
+    "id": "af-119",
+    "schoolId": "s-tennessee-military-academy",
+    "athleteId": "a-nfl-BUT285505",
+    "type": "alumni",
+    "league": "NFL",
+    "sport": "football",
+    "notes": "Inferred from athlete education (academy).",
+    "sources": [
+      "athlete_education"
+    ],
+    "metadata": {
+      "derivedFromEducationAffiliationId": "edu-a-nfl-BUT285505-academy-tennessee-military-academy",
+      "educationType": "academy"
+    }
+  },
+  {
+    "id": "af-120",
+    "schoolId": "s-tennessee-military-academy",
+    "athleteId": "a-nfl-JON602112",
+    "type": "alumni",
+    "league": "NFL",
+    "sport": "football",
+    "notes": "Inferred from athlete education (academy).",
+    "sources": [
+      "athlete_education"
+    ],
+    "metadata": {
+      "derivedFromEducationAffiliationId": "edu-a-nfl-JON602112-academy-tennessee-military-academy",
+      "educationType": "academy"
+    }
   }
 ]

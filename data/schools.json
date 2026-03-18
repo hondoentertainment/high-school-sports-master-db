@@ -3056,6 +3056,28 @@
     }
   },
   {
+    "id": "s-tennessee-military-academy",
+    "name": "Tennessee Military Academy",
+    "city": "",
+    "country": "US",
+    "region": "",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 3
+    }
+  },
+  {
     "id": "s-hill-academy",
     "name": "The Hill Academy",
     "city": "Vaughan",

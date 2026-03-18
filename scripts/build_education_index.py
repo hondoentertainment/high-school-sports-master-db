@@ -216,8 +216,11 @@ def infer_college_country(*names: str | None) -> str | None:
 SCHOOL_ALIAS_MAP = {
     "dominguez-hs": "s-dominguez",
     "dominguez-hs-ca": "s-dominguez",
+    "dominguez-high-school": "s-dominguez",
     "south-kent-hs": "s-south-kent",
+    "south-kent-high-school": "s-south-kent",
     "farragut-academy-hs": "s-farragut-chicago",
+    "farragut-academy-high-school": "s-farragut-chicago",
     "bloomington-high-school-north": "s-bloomington-north",
 }
 

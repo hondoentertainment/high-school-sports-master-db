@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 
@@ -60,6 +61,33 @@ def next_affiliation_id(existing: list[dict], index: int) -> str:
     return f"af-{value:0{width}d}"
 
 
+def normalize_name(value: str) -> str:
+    text = unicodedata.normalize("NFKD", value or "").encode("ascii", "ignore").decode("ascii")
+    text = text.lower().replace("&", " and ")
+    text = re.sub(r"\([^)]*\)", " ", text)
+    text = re.sub(r"\bhs\b", "high school", text)
+    text = re.sub(r"\bst\.\b", "saint", text)
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    return re.sub(r"-+", "-", text).strip("-")
+
+
+def build_school_lookup(schools: list[dict]) -> dict[str, str]:
+    lookup: dict[str, str] = {}
+    for school in schools:
+        variants = {
+            school["name"],
+            school["name"].replace("High School", "HS"),
+            school["name"].replace(" High School", ""),
+            school["name"].replace("Saint", "St."),
+            school["name"].replace("Preparatory", "Prep"),
+        }
+        for variant in variants:
+            key = normalize_name(variant)
+            if key:
+                lookup.setdefault(key, school["id"])
+    return lookup
+
+
 def main() -> int:
     affiliations = load_json("affiliations.json")
     education_affiliations = load_json("education_affiliations.json")
@@ -68,6 +96,7 @@ def main() -> int:
 
     athlete_by_id = {row["id"]: row for row in athletes}
     school_ids = {row["id"] for row in schools}
+    school_lookup = build_school_lookup(schools)
 
     # Treat athlete-school as unique for inferred inserts.
     existing_pairs = {(row.get("athleteId"), row.get("schoolId")) for row in affiliations}
@@ -80,6 +109,8 @@ def main() -> int:
         if edu.get("educationType") not in ELIGIBLE_EDUCATION_TYPES:
             continue
         school_id = edu.get("institutionId")
+        if not school_id:
+            school_id = school_lookup.get(normalize_name(edu.get("institutionName", "")))
         athlete_id = edu.get("athleteId")
         if not school_id or not str(school_id).startswith("s-"):
             continue

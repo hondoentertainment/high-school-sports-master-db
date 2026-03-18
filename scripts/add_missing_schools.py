@@ -16,7 +16,7 @@ DATA_DIR = ROOT / "data"
 
 # Likely colleges/programs to skip (not high schools)
 SKIP_PATTERNS = [
-    "mississippi", "tennessee", "east tennessee", "hofstra",
+    "east tennessee", "hofstra",
     "merchant marine", "oklahoma military academy", "jc)", "j.c.)",
 ]
 

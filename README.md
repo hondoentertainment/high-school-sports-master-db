@@ -63,7 +63,7 @@ See [docs/SOURCES.md](docs/SOURCES.md) for detailed links, usage, and license re
 
 ## Geographic Coverage
 
-- **US** — 30+ schools across all four leagues
+- **US** — 238 schools (includes all with 1+ affiliated players from education data)
 - **Canada** — Schools in Alberta, Quebec, Ontario, British Columbia (NHL, NBA, MLB)
 - **International** — Germany, France, Japan, Puerto Rico, Sweden
 
@@ -86,6 +86,7 @@ npm run load          # Load and verify database
 npm run export        # Bulk export to CSV (data/exports/)
 npm run ingest        # Refresh the central athlete database
 npm run build:education # Build normalized school/college links
+npm run add-schools     # Add schools from education_affiliations with 1+ players
 npm run validate      # Validate schema (required fields, references, no duplicates)
 npm run audit         # Validate + audit consistency and field coverage
 npm run api:dev       # Run read-only API locally (Vercel dev server)

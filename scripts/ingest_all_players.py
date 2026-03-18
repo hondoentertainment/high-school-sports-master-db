@@ -691,6 +691,11 @@ def enrich_nba_players(players: list[dict]) -> None:
             player.setdefault("teams", []).append(team_name)
         if none_if_empty(profile.get("BIRTHDATE")):
             player["birthDate"] = none_if_empty(profile.get("BIRTHDATE"))
+        # NBA CommonPlayerInfo exposes birthplace split fields; map them into shared schema.
+        if none_if_empty(profile.get("BIRTHCITY")):
+            player["birthCity"] = none_if_empty(profile.get("BIRTHCITY"))
+        if none_if_empty(profile.get("BIRTH_STATE_PROVINCE")):
+            player["birthRegion"] = none_if_empty(profile.get("BIRTH_STATE_PROVINCE"))
         if none_if_empty(profile.get("HEIGHT")):
             player["height"] = none_if_empty(profile.get("HEIGHT"))
         if none_if_empty(profile.get("WEIGHT")):
@@ -891,6 +896,18 @@ def enrich_nhl_players(players: list[dict]) -> None:
             player["position"] = position
         if team_name and team_name not in player.get("teams", []):
             player.setdefault("teams", []).append(team_name)
+        # Derive NHL career span from NHL season totals when available.
+        seasons = [
+            row.get("season")
+            for row in (profile.get("seasonTotals") or [])
+            if str(row.get("leagueAbbrev", "")).upper() == "NHL" and isinstance(row.get("season"), int)
+        ]
+        if seasons:
+            start_year = min(seasons) // 10000
+            end_year = max(seasons) % 10000
+            if start_year and end_year:
+                player["yearsActive"] = f"{start_year}-{end_year}" if start_year != end_year else str(start_year)
+                player["era"] = era_from_years(player.get("yearsActive"), start_year)
         player["birthDate"] = player.get("birthDate") or none_if_empty(profile.get("birthDate"))
         player["birthCity"] = player.get("birthCity") or localized_text(profile.get("birthCity"))
         player["birthRegion"] = player.get("birthRegion") or localized_text(profile.get("birthStateProvince"))

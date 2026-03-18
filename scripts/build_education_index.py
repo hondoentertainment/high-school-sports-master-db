@@ -212,8 +212,22 @@ def infer_college_country(*names: str | None) -> str | None:
     return None
 
 
+# Map observed high school name variants to existing school IDs (normalized key -> school id)
+SCHOOL_ALIAS_MAP = {
+    "dominguez-hs": "s-dominguez",
+    "dominguez-hs-ca": "s-dominguez",
+    "south-kent-hs": "s-south-kent",
+    "farragut-academy-hs": "s-farragut-chicago",
+    "bloomington-high-school-north": "s-bloomington-north",
+}
+
+
 def build_school_lookup(schools: list[dict]) -> dict[str, dict]:
     lookup: dict[str, dict] = {}
+    school_by_id = {s["id"]: s for s in schools}
+    for alias_key, school_id in SCHOOL_ALIAS_MAP.items():
+        if school_id in school_by_id:
+            lookup[alias_key] = school_by_id[school_id]
     for school in schools:
         names = {
             school["name"],

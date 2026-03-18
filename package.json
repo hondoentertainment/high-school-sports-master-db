@@ -12,6 +12,7 @@
     "audit": "python scripts/validate_schema.py && python scripts/audit_database.py",
     "validate": "python scripts/validate_schema.py",
     "build:education": "python scripts/build_education_index.py",
+    "add-schools": "python scripts/add_missing_schools.py",
     "api:dev": "vercel dev"
   },
   "devDependencies": {

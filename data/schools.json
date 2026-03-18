@@ -1,193 +1,3408 @@
 [
-  { "id": "s-001", "name": "St. Vincent-St. Mary High School", "city": "Akron", "country": "US", "region": "Ohio", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-002", "name": "Lower Merion High School", "city": "Ardmore", "country": "US", "region": "Pennsylvania", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-003", "name": "Emsley A. Laney High School", "city": "Wilmington", "country": "US", "region": "North Carolina", "sportFocus": ["basketball", "football", "baseball"], "leagues": ["NBA"] },
-  { "id": "s-004", "name": "Oak Hill Academy", "city": "Mouth of Wilson", "country": "US", "region": "Virginia", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-005", "name": "Charlotte Christian School", "city": "Charlotte", "country": "US", "region": "North Carolina", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-006", "name": "Everett High School", "city": "Lansing", "country": "US", "region": "Michigan", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-007", "name": "Springs Valley High School", "city": "French Lick", "country": "US", "region": "Indiana", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-008", "name": "Montrose Christian School", "city": "Rockville", "country": "US", "region": "Maryland", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-009", "name": "Junípero Serra High School", "city": "San Mateo", "country": "US", "region": "California", "sportFocus": ["football", "baseball"], "leagues": ["NFL", "MLB"] },
-  { "id": "s-010", "name": "Isidore Newman School", "city": "New Orleans", "country": "US", "region": "Louisiana", "sportFocus": ["football", "basketball"], "leagues": ["NFL", "NBA"] },
-  { "id": "s-011", "name": "Central Catholic High School", "city": "Pittsburgh", "country": "US", "region": "Pennsylvania", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-012", "name": "Ringgold High School", "city": "Monongahela", "country": "US", "region": "Pennsylvania", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-013", "name": "Helix Charter High School", "city": "La Mesa", "country": "US", "region": "California", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-014", "name": "Pleasant Valley High School", "city": "Chico", "country": "US", "region": "California", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-015", "name": "Whitehouse High School", "city": "Whitehouse", "country": "US", "region": "Texas", "sportFocus": ["football", "baseball"], "leagues": ["NFL", "MLB"] },
-  { "id": "s-016", "name": "Escambia High School", "city": "Pensacola", "country": "US", "region": "Florida", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-017", "name": "Lafayette High School", "city": "Williamsburg", "country": "US", "region": "Virginia", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-018", "name": "John Muir High School", "city": "Pasadena", "country": "US", "region": "California", "sportFocus": ["baseball", "football", "basketball"], "leagues": ["MLB", "NFL", "NBA"] },
-  { "id": "s-019", "name": "Commerce High School", "city": "Commerce", "country": "US", "region": "Oklahoma", "sportFocus": ["baseball", "football"], "leagues": ["MLB", "NFL"] },
-  { "id": "s-020", "name": "St. Mary's Industrial School", "city": "Baltimore", "country": "US", "region": "Maryland", "sportFocus": ["baseball"], "leagues": ["MLB"], "founded": 1866 },
-  { "id": "s-021", "name": "Kalamazoo Central High School", "city": "Kalamazoo", "country": "US", "region": "Michigan", "sportFocus": ["baseball", "basketball"], "leagues": ["MLB", "NBA"] },
-  { "id": "s-022", "name": "Archbishop Moeller High School", "city": "Cincinnati", "country": "US", "region": "Ohio", "sportFocus": ["baseball", "football"], "leagues": ["MLB", "NFL"] },
-  { "id": "s-023", "name": "Las Vegas High School", "city": "Las Vegas", "country": "US", "region": "Nevada", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-024", "name": "Millville Senior High School", "city": "Millville", "country": "US", "region": "New Jersey", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-025", "name": "Ross Sheppard High School", "city": "Edmonton", "country": "CA", "region": "Alberta", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-026", "name": "Shattuck-Saint Mary's School", "city": "Faribault", "country": "US", "region": "Minnesota", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-027", "name": "St. Francis High School", "city": "Buffalo", "country": "US", "region": "New York", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-028", "name": "École Secondaire Antoine-de-Saint-Exupéry", "city": "Repentigny", "country": "CA", "region": "Quebec", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-029", "name": "St. Michael's University School", "city": "Victoria", "country": "CA", "region": "British Columbia", "sportFocus": ["basketball", "soccer"], "leagues": ["NBA"] },
-  { "id": "s-030", "name": "Röntgen-Gymnasium Würzburg", "city": "Würzburg", "country": "DE", "region": "Bavaria", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-031", "name": "INSEP", "city": "Paris", "country": "FR", "region": "Île-de-France", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-032", "name": "Aikodai Meiden High School", "city": "Nagoya", "country": "JP", "region": "Aichi", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-033", "name": "Luis Muñoz Marín High School", "city": "Carolina", "country": "PR", "region": "Carolina", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-034", "name": "École Secondaire Polyvalente Nicolas-Garnier", "city": "Amos", "country": "CA", "region": "Quebec", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-035", "name": "Parry Sound High School", "city": "Parry Sound", "country": "CA", "region": "Ontario", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-036", "name": "Crawford High School", "city": "Jackson", "country": "US", "region": "Mississippi", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-037", "name": "Columbia High School", "city": "Columbia", "country": "US", "region": "Mississippi", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-038", "name": "Firebaugh High School", "city": "Firebaugh", "country": "US", "region": "California", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-039", "name": "Huntington Beach High School", "city": "Huntington Beach", "country": "US", "region": "California", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-040", "name": "Skellefteå Gymnasium", "city": "Skellefteå", "country": "SE", "region": "Västerbotten", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-041", "name": "St. Ignatius College Preparatory", "city": "San Francisco", "country": "US", "region": "California", "sportFocus": ["football", "baseball"], "leagues": ["NFL", "MLB"] },
-  { "id": "s-042", "name": "Detroit Country Day School", "city": "Beverly Hills", "country": "US", "region": "Michigan", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-043", "name": "Findlay Prep", "city": "Henderson", "country": "US", "region": "Nevada", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-img-academy", "name": "IMG Academy", "city": "Bradenton", "country": "US", "region": "Florida", "sportFocus": ["football", "basketball", "baseball", "tennis"], "leagues": ["NFL", "NBA", "MLB"] },
-  { "id": "s-montverde-academy", "name": "Montverde Academy", "city": "Montverde", "country": "US", "region": "Florida", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-mater-dei", "name": "Mater Dei High School", "city": "Santa Ana", "country": "US", "region": "California", "sportFocus": ["basketball", "football"], "leagues": ["NBA", "NFL"] },
-  { "id": "s-long-beach-poly", "name": "Long Beach Polytechnic High School", "city": "Long Beach", "country": "US", "region": "California", "sportFocus": ["football", "basketball", "baseball", "track"], "leagues": ["NFL", "NBA", "MLB"] },
-  { "id": "s-dematha-catholic", "name": "DeMatha Catholic High School", "city": "Hyattsville", "country": "US", "region": "Maryland", "sportFocus": ["basketball", "football"], "leagues": ["NBA", "NFL"] },
-  { "id": "s-st-benedicts-prep", "name": "St. Benedict's Prep", "city": "Newark", "country": "US", "region": "New Jersey", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-brewster-academy", "name": "Brewster Academy", "city": "Wolfeboro", "country": "US", "region": "New Hampshire", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-fork-union-military", "name": "Fork Union Military Academy", "city": "Fork Union", "country": "US", "region": "Virginia", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-hargrave-military", "name": "Hargrave Military Academy", "city": "Chatham", "country": "US", "region": "Virginia", "sportFocus": ["football", "basketball"], "leagues": ["NFL", "NBA"] },
-  { "id": "s-st-thomas-aquinas", "name": "St. Thomas Aquinas High School", "city": "Fort Lauderdale", "country": "US", "region": "Florida", "sportFocus": ["football", "baseball"], "leagues": ["NFL", "MLB"] },
-  { "id": "s-st-ignatius-chicago", "name": "St. Ignatius College Prep", "city": "Chicago", "country": "US", "region": "Illinois", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-de-la-salle-concord", "name": "De La Salle High School", "city": "Concord", "country": "US", "region": "California", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-st-xavier-cincinnati", "name": "St. Xavier High School", "city": "Cincinnati", "country": "US", "region": "Ohio", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-westlake-ohio", "name": "Westlake High School", "city": "Westlake", "country": "US", "region": "Ohio", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-sierra-canyon", "name": "Sierra Canyon School", "city": "Chatsworth", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-sunrise-christian", "name": "Sunrise Christian Academy", "city": "Bel Aire", "country": "US", "region": "Kansas", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-la-lumiere", "name": "La Lumiere School", "city": "La Porte", "country": "US", "region": "Indiana", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-bishop-gorman", "name": "Bishop Gorman High School", "city": "Las Vegas", "country": "US", "region": "Nevada", "sportFocus": ["basketball", "football"], "leagues": ["NBA", "NFL"] },
-  { "id": "s-duncanville", "name": "Duncanville High School", "city": "Duncanville", "country": "US", "region": "Texas", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-paul-vi", "name": "Paul VI Catholic High School", "city": "Fairfax", "country": "US", "region": "Virginia", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-gonzaga-dc", "name": "Gonzaga College High School", "city": "Washington", "country": "US", "region": "District of Columbia", "sportFocus": ["basketball", "football"], "leagues": ["NBA", "NFL"] },
-  { "id": "s-whitney-young", "name": "Whitney Young Magnet High School", "city": "Chicago", "country": "US", "region": "Illinois", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-simeon", "name": "Simeon Career Academy", "city": "Chicago", "country": "US", "region": "Illinois", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-allen-texas", "name": "Allen High School", "city": "Allen", "country": "US", "region": "Texas", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-katy", "name": "Katy High School", "city": "Katy", "country": "US", "region": "Texas", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-southlake-carroll", "name": "Southlake Carroll High School", "city": "Southlake", "country": "US", "region": "Texas", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-jesuit-tampa", "name": "Jesuit High School", "city": "Tampa", "country": "US", "region": "Florida", "sportFocus": ["baseball", "football"], "leagues": ["MLB", "NFL"] },
-  { "id": "s-american-heritage-plantation", "name": "American Heritage School", "city": "Plantation", "country": "US", "region": "Florida", "sportFocus": ["baseball", "football"], "leagues": ["MLB", "NFL"] },
-  { "id": "s-rancho-bernardo", "name": "Rancho Bernardo High School", "city": "San Diego", "country": "US", "region": "California", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-chatsworth-hs", "name": "Chatsworth High School", "city": "Chatsworth", "country": "US", "region": "California", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-barbe", "name": "Barbe High School", "city": "Lake Charles", "country": "US", "region": "Louisiana", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-culver-academies", "name": "Culver Academies", "city": "Culver", "country": "US", "region": "Indiana", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-avon-old-farms", "name": "Avon Old Farms School", "city": "Avon", "country": "US", "region": "Connecticut", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-berkshire-school", "name": "Berkshire School", "city": "Sheffield", "country": "US", "region": "Massachusetts", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-northfield-mount-hermon", "name": "Northfield Mount Hermon School", "city": "Gill", "country": "US", "region": "Massachusetts", "sportFocus": ["basketball", "hockey"], "leagues": ["NBA", "NHL"] },
-  { "id": "s-salesianum", "name": "Salesianum School", "city": "Wilmington", "country": "US", "region": "Delaware", "sportFocus": ["football", "basketball"], "leagues": ["NFL", "NBA"] },
-  { "id": "s-roman-catholic", "name": "Roman Catholic High School", "city": "Philadelphia", "country": "US", "region": "Pennsylvania", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-centennial-corona", "name": "Centennial High School", "city": "Corona", "country": "US", "region": "California", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-hoover-al", "name": "Hoover High School", "city": "Hoover", "country": "US", "region": "Alabama", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-manatee", "name": "Manatee High School", "city": "Bradenton", "country": "US", "region": "Florida", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-armwood", "name": "Armwood High School", "city": "Seffner", "country": "US", "region": "Florida", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-miami-northwestern", "name": "Miami Northwestern Senior High School", "city": "Miami", "country": "US", "region": "Florida", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-miami-central", "name": "Miami Central Senior High School", "city": "Miami", "country": "US", "region": "Florida", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-buford", "name": "Buford High School", "city": "Buford", "country": "US", "region": "Georgia", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-grayson", "name": "Grayson High School", "city": "Loganville", "country": "US", "region": "Georgia", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-cedar-grove", "name": "Cedar Grove High School", "city": "Ellenwood", "country": "US", "region": "Georgia", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-valdosta", "name": "Valdosta High School", "city": "Valdosta", "country": "US", "region": "Georgia", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-union-ok", "name": "Union High School", "city": "Tulsa", "country": "US", "region": "Oklahoma", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-jenks", "name": "Jenks High School", "city": "Jenks", "country": "US", "region": "Oklahoma", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-st-edward-oh", "name": "St. Edward High School", "city": "Lakewood", "country": "US", "region": "Ohio", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-glenville", "name": "Glenville Academic Campus", "city": "Cleveland", "country": "US", "region": "Ohio", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-cass-tech", "name": "Cass Technical High School", "city": "Detroit", "country": "US", "region": "Michigan", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-bergen-catholic", "name": "Bergen Catholic High School", "city": "Oradell", "country": "US", "region": "New Jersey", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-don-bosco-prep", "name": "Don Bosco Preparatory High School", "city": "Ramsey", "country": "US", "region": "New Jersey", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-st-josephs-prep", "name": "St. Joseph's Preparatory School", "city": "Philadelphia", "country": "US", "region": "Pennsylvania", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-lake-travis", "name": "Lake Travis High School", "city": "Austin", "country": "US", "region": "Texas", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-north-shore", "name": "North Shore Senior High School", "city": "Houston", "country": "US", "region": "Texas", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-christ-the-king", "name": "Christ the King Regional High School", "city": "Middle Village", "country": "US", "region": "New York", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-lincoln-brooklyn", "name": "Abraham Lincoln High School", "city": "Brooklyn", "country": "US", "region": "New York", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-camden", "name": "Camden High School", "city": "Camden", "country": "US", "region": "New Jersey", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-neumann-goretti", "name": "Ss. Neumann-Goretti High School", "city": "Philadelphia", "country": "US", "region": "Pennsylvania", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-huntington-prep", "name": "Huntington Prep", "city": "Huntington", "country": "US", "region": "West Virginia", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-prolific-prep", "name": "Prolific Prep", "city": "Napa", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-wasatch-academy", "name": "Wasatch Academy", "city": "Mt. Pleasant", "country": "US", "region": "Utah", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-link-academy", "name": "Link Academy", "city": "Branson", "country": "US", "region": "Missouri", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-archbishop-molloy", "name": "Archbishop Molloy High School", "city": "Jamaica", "country": "US", "region": "New York", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-st-anthony", "name": "St. Anthony High School", "city": "Jersey City", "country": "US", "region": "New Jersey", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-lone-peak", "name": "Lone Peak High School", "city": "Highland", "country": "US", "region": "Utah", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-cy-fair", "name": "Cypress-Fairbanks High School", "city": "Cypress", "country": "US", "region": "Texas", "sportFocus": ["football", "baseball"], "leagues": ["NFL", "MLB"] },
-  { "id": "s-plano-west", "name": "Plano West Senior High School", "city": "Plano", "country": "US", "region": "Texas", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-kimberly-wi", "name": "Kimberly High School", "city": "Kimberly", "country": "US", "region": "Wisconsin", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-el-camino-real", "name": "El Camino Real Charter High School", "city": "Woodland Hills", "country": "US", "region": "California", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-hart-high", "name": "William S. Hart High School", "city": "Santa Clarita", "country": "US", "region": "California", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-crespi-carmelite", "name": "Crespi Carmelite High School", "city": "Encino", "country": "US", "region": "California", "sportFocus": ["baseball", "football"], "leagues": ["MLB", "NFL"] },
-  { "id": "s-norte-vista", "name": "Norte Vista High School", "city": "Riverside", "country": "US", "region": "California", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-notre-dame-sherman-oaks", "name": "Notre Dame High School", "city": "Sherman Oaks", "country": "US", "region": "California", "sportFocus": ["baseball", "football"], "leagues": ["MLB", "NFL"] },
-  { "id": "s-phillips-andover", "name": "Phillips Academy Andover", "city": "Andover", "country": "US", "region": "Massachusetts", "sportFocus": ["hockey", "basketball"], "leagues": ["NHL", "NBA"] },
-  { "id": "s-hill-academy", "name": "The Hill Academy", "city": "Vaughan", "country": "CA", "region": "Ontario", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-selects-hockey", "name": "Selects Hockey Academy", "city": "South Kent", "country": "US", "region": "Connecticut", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-warren-central-in", "name": "Warren Central High School", "city": "Indianapolis", "country": "US", "region": "Indiana", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-carmel-in", "name": "Carmel High School", "city": "Carmel", "country": "US", "region": "Indiana", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-center-grove", "name": "Center Grove High School", "city": "Greenwood", "country": "US", "region": "Indiana", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-trinity-louisville", "name": "Trinity High School", "city": "Louisville", "country": "US", "region": "Kentucky", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-st-xavier-louisville", "name": "St. Xavier High School", "city": "Louisville", "country": "US", "region": "Kentucky", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-colquitt-county", "name": "Colquitt County High School", "city": "Moultrie", "country": "US", "region": "Georgia", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-lowndes", "name": "Lowndes High School", "city": "Valdosta", "country": "US", "region": "Georgia", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-lakeland-fl", "name": "Lakeland Senior High School", "city": "Lakeland", "country": "US", "region": "Florida", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-venice-fl", "name": "Venice High School", "city": "Venice", "country": "US", "region": "Florida", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-st-john-bosco", "name": "St. John Bosco High School", "city": "Bellflower", "country": "US", "region": "California", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-servite", "name": "Servite High School", "city": "Anaheim", "country": "US", "region": "California", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-mission-viejo", "name": "Mission Viejo High School", "city": "Mission Viejo", "country": "US", "region": "California", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-cedar-hill", "name": "Cedar Hill High School", "city": "Cedar Hill", "country": "US", "region": "Texas", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-desoto", "name": "DeSoto High School", "city": "DeSoto", "country": "US", "region": "Texas", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-euless-trinity", "name": "Euless Trinity High School", "city": "Euless", "country": "US", "region": "Texas", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-massillon", "name": "Washington High School", "city": "Massillon", "country": "US", "region": "Ohio", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-elder", "name": "Elder High School", "city": "Cincinnati", "country": "US", "region": "Ohio", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-st-johns-dc", "name": "St. John's College High School", "city": "Washington", "country": "US", "region": "District of Columbia", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-good-counsel", "name": "Our Lady of Good Counsel High School", "city": "Olney", "country": "US", "region": "Maryland", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-st-frances-baltimore", "name": "St. Frances Academy", "city": "Baltimore", "country": "US", "region": "Maryland", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-salesian-richmond", "name": "Salesian College Preparatory", "city": "Richmond", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-archbishop-carroll-philly", "name": "Archbishop John Carroll High School", "city": "Radnor", "country": "US", "region": "Pennsylvania", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-st-raymonds", "name": "St. Raymond High School for Boys", "city": "Bronx", "country": "US", "region": "New York", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-bishop-odowd", "name": "Bishop O'Dowd High School", "city": "Oakland", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-westchester-la", "name": "Westchester High School", "city": "Los Angeles", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-dominguez", "name": "Compton Dominguez High School", "city": "Compton", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-morgan-park", "name": "Morgan Park High School", "city": "Chicago", "country": "US", "region": "Illinois", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-curie", "name": "Curie Metropolitan High School", "city": "Chicago", "country": "US", "region": "Illinois", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-st-rita", "name": "St. Rita of Cascia High School", "city": "Chicago", "country": "US", "region": "Illinois", "sportFocus": ["basketball", "football"], "leagues": ["NBA", "NFL"] },
-  { "id": "s-az-compass", "name": "AZ Compass Preparatory School", "city": "Chandler", "country": "US", "region": "Arizona", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-dream-city", "name": "Dream City Christian School", "city": "Glendale", "country": "US", "region": "Arizona", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-creighton-prep", "name": "Creighton Preparatory School", "city": "Omaha", "country": "US", "region": "Nebraska", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-abilene", "name": "Abilene High School", "city": "Abilene", "country": "US", "region": "Texas", "sportFocus": ["football", "baseball"], "leagues": ["NFL", "MLB"] },
-  { "id": "s-bishop-amat", "name": "Bishop Amat Memorial High School", "city": "La Puente", "country": "US", "region": "California", "sportFocus": ["football", "baseball"], "leagues": ["NFL", "MLB"] },
-  { "id": "s-corona-del-mar", "name": "Corona del Mar High School", "city": "Newport Beach", "country": "US", "region": "California", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-south-kent", "name": "South Kent School", "city": "South Kent", "country": "US", "region": "Connecticut", "sportFocus": ["hockey", "basketball"], "leagues": ["NHL", "NBA"] },
-  { "id": "s-kimball-union", "name": "Kimball Union Academy", "city": "Meriden", "country": "US", "region": "New Hampshire", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-notre-dame-prep-mi", "name": "Notre Dame Preparatory School", "city": "Pontiac", "country": "US", "region": "Michigan", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-st-andrews-coll", "name": "St. Andrew's College", "city": "Aurora", "country": "CA", "region": "Ontario", "sportFocus": ["hockey"], "leagues": ["NHL"] },
-  { "id": "s-st-marks-texas", "name": "St. Mark's School of Texas", "city": "Dallas", "country": "US", "region": "Texas", "sportFocus": ["football", "baseball"], "leagues": ["NFL", "MLB"] },
-  { "id": "s-yabucoa", "name": "Escuela Superior Yabucoa", "city": "Yabucoa", "country": "PR", "region": "Yabucoa", "sportFocus": ["baseball"], "leagues": ["MLB"] },
-  { "id": "s-bethel-va", "name": "Bethel High School", "city": "Hampton", "country": "US", "region": "Virginia", "sportFocus": ["basketball", "football"], "leagues": ["NBA", "NFL"] },
-  { "id": "s-richards", "name": "Richards High School", "city": "Oak Lawn", "country": "US", "region": "Illinois", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-mount-zion", "name": "Mount Zion Christian Academy", "city": "Durham", "country": "US", "region": "North Carolina", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-farragut-chicago", "name": "Farragut Career Academy", "city": "Chicago", "country": "US", "region": "Illinois", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-st-patrick-nj", "name": "St. Patrick High School", "city": "Elizabeth", "country": "US", "region": "New Jersey", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-perspective-charter", "name": "Perspective Charter Schools", "city": "Chicago", "country": "US", "region": "Illinois", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-west-forsyth", "name": "West Forsyth High School", "city": "Clemmons", "country": "US", "region": "North Carolina", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-mainland", "name": "Mainland High School", "city": "Daytona Beach", "country": "US", "region": "Florida", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-cole-san-antonio", "name": "Robert G. Cole High School", "city": "San Antonio", "country": "US", "region": "Texas", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-oakland-hs", "name": "Oakland High School", "city": "Oakland", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-leuzinger", "name": "Leuzinger High School", "city": "Lawndale", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-lake-oswego", "name": "Lake Oswego High School", "city": "Lake Oswego", "country": "US", "region": "Oregon", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-oklahoma-christian", "name": "Oklahoma Christian School", "city": "Edmond", "country": "US", "region": "Oklahoma", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-mlk-riverside", "name": "Martin Luther King High School", "city": "Riverside", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-compton-hs", "name": "Compton High School", "city": "Compton", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-artesia", "name": "Artesia High School", "city": "Lakewood", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-westlake-austin", "name": "Westlake High School", "city": "Austin", "country": "US", "region": "Texas", "sportFocus": ["football"], "leagues": ["NFL"] },
-  { "id": "s-chaminade-stl", "name": "Chaminade College Preparatory School", "city": "Creve Coeur", "country": "US", "region": "Missouri", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-st-joseph-metuchen", "name": "St. Joseph High School", "city": "Metuchen", "country": "US", "region": "New Jersey", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-rainier-beach", "name": "Rainier Beach High School", "city": "Seattle", "country": "US", "region": "Washington", "sportFocus": ["basketball", "football"], "leagues": ["NBA", "NFL"] },
-  { "id": "s-lanier-jackson", "name": "Lanier High School", "city": "Jackson", "country": "US", "region": "Mississippi", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-latta-sc", "name": "Latta High School", "city": "Latta", "country": "US", "region": "South Carolina", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-st-marys-phoenix", "name": "St. Mary's High School", "city": "Phoenix", "country": "US", "region": "Arizona", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-bloomington-north", "name": "Bloomington High School North", "city": "Bloomington", "country": "US", "region": "Indiana", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-winchendon", "name": "The Winchendon School", "city": "Winchendon", "country": "US", "region": "Massachusetts", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-grace-king", "name": "Grace King High School", "city": "Metairie", "country": "US", "region": "Louisiana", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-inglewood", "name": "Inglewood High School", "city": "Inglewood", "country": "US", "region": "California", "sportFocus": ["basketball"], "leagues": ["NBA"] },
-  { "id": "s-towson-catholic", "name": "Towson Catholic High School", "city": "Baltimore", "country": "US", "region": "Maryland", "sportFocus": ["basketball"], "leagues": ["NBA"] }
+  {
+    "id": "s-abilene",
+    "name": "Abilene High School",
+    "city": "Abilene",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NFL",
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-lincoln-brooklyn",
+    "name": "Abraham Lincoln High School",
+    "city": "Brooklyn",
+    "country": "US",
+    "region": "New York",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-032",
+    "name": "Aikodai Meiden High School",
+    "city": "Nagoya",
+    "country": "JP",
+    "region": "Aichi",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-allen-texas",
+    "name": "Allen High School",
+    "city": "Allen",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-american-heritage-plantation",
+    "name": "American Heritage School",
+    "city": "Plantation",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "baseball",
+      "football"
+    ],
+    "leagues": [
+      "MLB",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-archbishop-carroll-philly",
+    "name": "Archbishop John Carroll High School",
+    "city": "Radnor",
+    "country": "US",
+    "region": "Pennsylvania",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-022",
+    "name": "Archbishop Moeller High School",
+    "city": "Cincinnati",
+    "country": "US",
+    "region": "Ohio",
+    "sportFocus": [
+      "baseball",
+      "football"
+    ],
+    "leagues": [
+      "MLB",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-archbishop-molloy",
+    "name": "Archbishop Molloy High School",
+    "city": "Jamaica",
+    "country": "US",
+    "region": "New York",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-armwood",
+    "name": "Armwood High School",
+    "city": "Seffner",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-artesia",
+    "name": "Artesia High School",
+    "city": "Lakewood",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-athlete-institute-prep",
+    "name": "Athlete Institute Prep",
+    "city": "",
+    "country": "US",
+    "region": "",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-avon-old-farms",
+    "name": "Avon Old Farms School",
+    "city": "Avon",
+    "country": "US",
+    "region": "Connecticut",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-az-compass",
+    "name": "AZ Compass Preparatory School",
+    "city": "Chandler",
+    "country": "US",
+    "region": "Arizona",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-bakersfield-high-school",
+    "name": "Bakersfield HS",
+    "city": "",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-ball-galveston",
+    "name": "Ball High School",
+    "city": "Galveston",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-barbe",
+    "name": "Barbe High School",
+    "city": "Lake Charles",
+    "country": "US",
+    "region": "Louisiana",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-bellarmine-sj",
+    "name": "Bellarmine College Preparatory",
+    "city": "San Jose",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball",
+      "football"
+    ],
+    "leagues": [
+      "MLB",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-benjamin-franklin-high-school",
+    "name": "Benjamin Franklin HS",
+    "city": "",
+    "country": "US",
+    "region": "New York",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-bergen-catholic",
+    "name": "Bergen Catholic High School",
+    "city": "Oradell",
+    "country": "US",
+    "region": "New Jersey",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-berkeley-hs",
+    "name": "Berkeley High School",
+    "city": "Berkeley",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-berkshire-school",
+    "name": "Berkshire School",
+    "city": "Sheffield",
+    "country": "US",
+    "region": "Massachusetts",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-bethel-va",
+    "name": "Bethel High School",
+    "city": "Hampton",
+    "country": "US",
+    "region": "Virginia",
+    "sportFocus": [
+      "basketball",
+      "football"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-bishop-amat",
+    "name": "Bishop Amat Memorial High School",
+    "city": "La Puente",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NFL",
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-bishop-gorman",
+    "name": "Bishop Gorman High School",
+    "city": "Las Vegas",
+    "country": "US",
+    "region": "Nevada",
+    "sportFocus": [
+      "basketball",
+      "football"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-bishop-odowd",
+    "name": "Bishop O'Dowd High School",
+    "city": "Oakland",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-bloomington-north",
+    "name": "Bloomington High School North",
+    "city": "Bloomington",
+    "country": "US",
+    "region": "Indiana",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-brewster-academy",
+    "name": "Brewster Academy",
+    "city": "Wolfeboro",
+    "country": "US",
+    "region": "New Hampshire",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-buford",
+    "name": "Buford High School",
+    "city": "Buford",
+    "country": "US",
+    "region": "Georgia",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-camden",
+    "name": "Camden High School",
+    "city": "Camden",
+    "country": "US",
+    "region": "New Jersey",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-carmel-in",
+    "name": "Carmel High School",
+    "city": "Carmel",
+    "country": "US",
+    "region": "Indiana",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-cass-tech",
+    "name": "Cass Technical High School",
+    "city": "Detroit",
+    "country": "US",
+    "region": "Michigan",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-cedar-grove",
+    "name": "Cedar Grove High School",
+    "city": "Ellenwood",
+    "country": "US",
+    "region": "Georgia",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-cedar-hill",
+    "name": "Cedar Hill High School",
+    "city": "Cedar Hill",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-centennial-corona",
+    "name": "Centennial High School",
+    "city": "Corona",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-center-grove",
+    "name": "Center Grove High School",
+    "city": "Greenwood",
+    "country": "US",
+    "region": "Indiana",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-011",
+    "name": "Central Catholic High School",
+    "city": "Pittsburgh",
+    "country": "US",
+    "region": "Pennsylvania",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-chaminade-stl",
+    "name": "Chaminade College Preparatory School",
+    "city": "Creve Coeur",
+    "country": "US",
+    "region": "Missouri",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-005",
+    "name": "Charlotte Christian School",
+    "city": "Charlotte",
+    "country": "US",
+    "region": "North Carolina",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-chatsworth-hs",
+    "name": "Chatsworth High School",
+    "city": "Chatsworth",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-christ-the-king",
+    "name": "Christ the King Regional High School",
+    "city": "Middle Village",
+    "country": "US",
+    "region": "New York",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-clifton-j-ozen-high-school",
+    "name": "Clifton J. Ozen HS",
+    "city": "",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-coastal-christian-academy",
+    "name": "Coastal Christian Academy",
+    "city": "",
+    "country": "US",
+    "region": "Virginia",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-colquitt-county",
+    "name": "Colquitt County High School",
+    "city": "Moultrie",
+    "country": "US",
+    "region": "Georgia",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-037",
+    "name": "Columbia High School",
+    "city": "Columbia",
+    "country": "US",
+    "region": "Mississippi",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-019",
+    "name": "Commerce High School",
+    "city": "Commerce",
+    "country": "US",
+    "region": "Oklahoma",
+    "sportFocus": [
+      "baseball",
+      "football"
+    ],
+    "leagues": [
+      "MLB",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-dominguez",
+    "name": "Compton Dominguez High School",
+    "city": "Compton",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-compton-hs",
+    "name": "Compton High School",
+    "city": "Compton",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-concord-high-school",
+    "name": "Concord HS",
+    "city": "",
+    "country": "US",
+    "region": "Indiana",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-corona-del-mar",
+    "name": "Corona del Mar High School",
+    "city": "Newport Beach",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-036",
+    "name": "Crawford High School",
+    "city": "Jackson",
+    "country": "US",
+    "region": "Mississippi",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-creighton-prep",
+    "name": "Creighton Preparatory School",
+    "city": "Omaha",
+    "country": "US",
+    "region": "Nebraska",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-crespi-carmelite",
+    "name": "Crespi Carmelite High School",
+    "city": "Encino",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball",
+      "football"
+    ],
+    "leagues": [
+      "MLB",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-culver-academies",
+    "name": "Culver Academies",
+    "city": "Culver",
+    "country": "US",
+    "region": "Indiana",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-curie",
+    "name": "Curie Metropolitan High School",
+    "city": "Chicago",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-cy-fair",
+    "name": "Cypress-Fairbanks High School",
+    "city": "Cypress",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NFL",
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-de-la-salle-concord",
+    "name": "De La Salle High School",
+    "city": "Concord",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-dematha-catholic",
+    "name": "DeMatha Catholic High School",
+    "city": "Hyattsville",
+    "country": "US",
+    "region": "Maryland",
+    "sportFocus": [
+      "basketball",
+      "football"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-desoto",
+    "name": "DeSoto High School",
+    "city": "DeSoto",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-042",
+    "name": "Detroit Country Day School",
+    "city": "Beverly Hills",
+    "country": "US",
+    "region": "Michigan",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-dewitt-clinton",
+    "name": "DeWitt Clinton High School",
+    "city": "Bronx",
+    "country": "US",
+    "region": "New York",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-don-bosco-prep",
+    "name": "Don Bosco Preparatory High School",
+    "city": "Ramsey",
+    "country": "US",
+    "region": "New Jersey",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-dream-city",
+    "name": "Dream City Christian School",
+    "city": "Glendale",
+    "country": "US",
+    "region": "Arizona",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-duncanville",
+    "name": "Duncanville High School",
+    "city": "Duncanville",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-dwight-morrow-high-school",
+    "name": "Dwight Morrow HS",
+    "city": "",
+    "country": "US",
+    "region": "New Jersey",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-east-high-school",
+    "name": "East HS",
+    "city": "",
+    "country": "US",
+    "region": "New York",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-edgewater-high-school",
+    "name": "Edgewater HS",
+    "city": "",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-el-camino-real",
+    "name": "El Camino Real Charter High School",
+    "city": "Woodland Hills",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-elder",
+    "name": "Elder High School",
+    "city": "Cincinnati",
+    "country": "US",
+    "region": "Ohio",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-elsik-high-school",
+    "name": "Elsik HS",
+    "city": "",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-003",
+    "name": "Emsley A. Laney High School",
+    "city": "Wilmington",
+    "country": "US",
+    "region": "North Carolina",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-016",
+    "name": "Escambia High School",
+    "city": "Pensacola",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-yabucoa",
+    "name": "Escuela Superior Yabucoa",
+    "city": "Yabucoa",
+    "country": "PR",
+    "region": "Yabucoa",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-euless-trinity",
+    "name": "Euless Trinity High School",
+    "city": "Euless",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-006",
+    "name": "Everett High School",
+    "city": "Lansing",
+    "country": "US",
+    "region": "Michigan",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-farragut-chicago",
+    "name": "Farragut Career Academy",
+    "city": "Chicago",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-043",
+    "name": "Findlay Prep",
+    "city": "Henderson",
+    "country": "US",
+    "region": "Nevada",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-038",
+    "name": "Firebaugh High School",
+    "city": "Firebaugh",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-flushing-high-school",
+    "name": "Flushing HS",
+    "city": "",
+    "country": "US",
+    "region": "New York",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-fork-union-military",
+    "name": "Fork Union Military Academy",
+    "city": "Fork Union",
+    "country": "US",
+    "region": "Virginia",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-fremont-la",
+    "name": "Fremont High School",
+    "city": "Los Angeles",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-washington-la",
+    "name": "George Washington Preparatory High School",
+    "city": "Los Angeles",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-glenville",
+    "name": "Glenville Academic Campus",
+    "city": "Cleveland",
+    "country": "US",
+    "region": "Ohio",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-glynn-academy-high-school",
+    "name": "Glynn Academy HS",
+    "city": "",
+    "country": "US",
+    "region": "Georgia",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-gonzaga-dc",
+    "name": "Gonzaga College High School",
+    "city": "Washington",
+    "country": "US",
+    "region": "District of Columbia",
+    "sportFocus": [
+      "basketball",
+      "football"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-grace-king",
+    "name": "Grace King High School",
+    "city": "Metairie",
+    "country": "US",
+    "region": "Louisiana",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-grayson",
+    "name": "Grayson High School",
+    "city": "Loganville",
+    "country": "US",
+    "region": "Georgia",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-hargrave-military",
+    "name": "Hargrave Military Academy",
+    "city": "Chatham",
+    "country": "US",
+    "region": "Virginia",
+    "sportFocus": [
+      "football",
+      "basketball"
+    ],
+    "leagues": [
+      "NFL",
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-harvard-westlake",
+    "name": "Harvard-Westlake School",
+    "city": "Studio City",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-013",
+    "name": "Helix Charter High School",
+    "city": "La Mesa",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-hillsborough-tampa",
+    "name": "Hillsborough High School",
+    "city": "Tampa",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-hoboken-high-school",
+    "name": "Hoboken HS",
+    "city": "",
+    "country": "US",
+    "region": "New Jersey",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-hoover-al",
+    "name": "Hoover High School",
+    "city": "Hoover",
+    "country": "US",
+    "region": "Alabama",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-039",
+    "name": "Huntington Beach High School",
+    "city": "Huntington Beach",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-huntington-prep",
+    "name": "Huntington Prep",
+    "city": "Huntington",
+    "country": "US",
+    "region": "West Virginia",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-img-academy",
+    "name": "IMG Academy",
+    "city": "Bradenton",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "football",
+      "basketball",
+      "baseball",
+      "tennis"
+    ],
+    "leagues": [
+      "NFL",
+      "NBA",
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-inglewood",
+    "name": "Inglewood High School",
+    "city": "Inglewood",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-031",
+    "name": "INSEP",
+    "city": "Paris",
+    "country": "FR",
+    "region": "Île-de-France",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-010",
+    "name": "Isidore Newman School",
+    "city": "New Orleans",
+    "country": "US",
+    "region": "Louisiana",
+    "sportFocus": [
+      "football",
+      "basketball"
+    ],
+    "leagues": [
+      "NFL",
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-james-monroe-high-school",
+    "name": "James Monroe HS",
+    "city": "",
+    "country": "US",
+    "region": "New York",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-jenks",
+    "name": "Jenks High School",
+    "city": "Jenks",
+    "country": "US",
+    "region": "Oklahoma",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-jesuit-tampa",
+    "name": "Jesuit High School",
+    "city": "Tampa",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "baseball",
+      "football"
+    ],
+    "leagues": [
+      "MLB",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-018",
+    "name": "John Muir High School",
+    "city": "Pasadena",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball",
+      "football",
+      "basketball"
+    ],
+    "leagues": [
+      "MLB",
+      "NFL",
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-009",
+    "name": "Junípero Serra High School",
+    "city": "San Mateo",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NFL",
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-021",
+    "name": "Kalamazoo Central High School",
+    "city": "Kalamazoo",
+    "country": "US",
+    "region": "Michigan",
+    "sportFocus": [
+      "baseball",
+      "basketball"
+    ],
+    "leagues": [
+      "MLB",
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-katy",
+    "name": "Katy High School",
+    "city": "Katy",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-kimball-union",
+    "name": "Kimball Union Academy",
+    "city": "Meriden",
+    "country": "US",
+    "region": "New Hampshire",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-kimberly-wi",
+    "name": "Kimberly High School",
+    "city": "Kimberly",
+    "country": "US",
+    "region": "Wisconsin",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-la-lumiere",
+    "name": "La Lumiere School",
+    "city": "La Porte",
+    "country": "US",
+    "region": "Indiana",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-017",
+    "name": "Lafayette High School",
+    "city": "Williamsburg",
+    "country": "US",
+    "region": "Virginia",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-lake-oswego",
+    "name": "Lake Oswego High School",
+    "city": "Lake Oswego",
+    "country": "US",
+    "region": "Oregon",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-lake-travis",
+    "name": "Lake Travis High School",
+    "city": "Austin",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-lakeland-fl",
+    "name": "Lakeland Senior High School",
+    "city": "Lakeland",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-lakewood-ca",
+    "name": "Lakewood High School",
+    "city": "Lakewood",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-lanier-jackson",
+    "name": "Lanier High School",
+    "city": "Jackson",
+    "country": "US",
+    "region": "Mississippi",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-023",
+    "name": "Las Vegas High School",
+    "city": "Las Vegas",
+    "country": "US",
+    "region": "Nevada",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-latta-sc",
+    "name": "Latta High School",
+    "city": "Latta",
+    "country": "US",
+    "region": "South Carolina",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-laurinburg-institute",
+    "name": "Laurinburg Institute",
+    "city": "Laurinburg",
+    "country": "US",
+    "region": "North Carolina",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-leuzinger",
+    "name": "Leuzinger High School",
+    "city": "Lawndale",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-link-academy",
+    "name": "Link Academy",
+    "city": "Branson",
+    "country": "US",
+    "region": "Missouri",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-lone-peak",
+    "name": "Lone Peak High School",
+    "city": "Highland",
+    "country": "US",
+    "region": "Utah",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-long-beach-poly",
+    "name": "Long Beach Polytechnic High School",
+    "city": "Long Beach",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football",
+      "basketball",
+      "baseball",
+      "track"
+    ],
+    "leagues": [
+      "NFL",
+      "NBA",
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-002",
+    "name": "Lower Merion High School",
+    "city": "Ardmore",
+    "country": "US",
+    "region": "Pennsylvania",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-lowndes",
+    "name": "Lowndes High School",
+    "city": "Valdosta",
+    "country": "US",
+    "region": "Georgia",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-033",
+    "name": "Luis Muñoz Marín High School",
+    "city": "Carolina",
+    "country": "PR",
+    "region": "Carolina",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-mainland",
+    "name": "Mainland High School",
+    "city": "Daytona Beach",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-male-louisville",
+    "name": "Male High School",
+    "city": "Louisville",
+    "country": "US",
+    "region": "Kentucky",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-manatee",
+    "name": "Manatee High School",
+    "city": "Bradenton",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-mlk-riverside",
+    "name": "Martin Luther King High School",
+    "city": "Riverside",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-mater-dei",
+    "name": "Mater Dei High School",
+    "city": "Santa Ana",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball",
+      "football"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-maynard-evans-high-school",
+    "name": "Maynard Evans HS",
+    "city": "",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-mckinley-canton",
+    "name": "McKinley High School",
+    "city": "Canton",
+    "country": "US",
+    "region": "Ohio",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-miami-central",
+    "name": "Miami Central Senior High School",
+    "city": "Miami",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-miami-northwestern",
+    "name": "Miami Northwestern Senior High School",
+    "city": "Miami",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-024",
+    "name": "Millville Senior High School",
+    "city": "Millville",
+    "country": "US",
+    "region": "New Jersey",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-minneapolis-vocational-high-school",
+    "name": "Minneapolis Vocational HS",
+    "city": "",
+    "country": "US",
+    "region": "Minnesota",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-mission-viejo",
+    "name": "Mission Viejo High School",
+    "city": "Mission Viejo",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-008",
+    "name": "Montrose Christian School",
+    "city": "Rockville",
+    "country": "US",
+    "region": "Maryland",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-montverde-academy",
+    "name": "Montverde Academy",
+    "city": "Montverde",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-moravian-prep",
+    "name": "Moravian Prep",
+    "city": "",
+    "country": "US",
+    "region": "North Carolina",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-morgan-park",
+    "name": "Morgan Park High School",
+    "city": "Chicago",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-mount-zion",
+    "name": "Mount Zion Christian Academy",
+    "city": "Durham",
+    "country": "US",
+    "region": "North Carolina",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-nba-global-academy",
+    "name": "NBA Global Academy",
+    "city": "",
+    "country": "US",
+    "region": "",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 2
+    }
+  },
+  {
+    "id": "s-norte-vista",
+    "name": "Norte Vista High School",
+    "city": "Riverside",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-north-shore",
+    "name": "North Shore Senior High School",
+    "city": "Houston",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-northfield-mount-hermon",
+    "name": "Northfield Mount Hermon School",
+    "city": "Gill",
+    "country": "US",
+    "region": "Massachusetts",
+    "sportFocus": [
+      "basketball",
+      "hockey"
+    ],
+    "leagues": [
+      "NBA",
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-notre-dame-sherman-oaks",
+    "name": "Notre Dame High School",
+    "city": "Sherman Oaks",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball",
+      "football"
+    ],
+    "leagues": [
+      "MLB",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-notre-dame-prep-mi",
+    "name": "Notre Dame Preparatory School",
+    "city": "Pontiac",
+    "country": "US",
+    "region": "Michigan",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-004",
+    "name": "Oak Hill Academy",
+    "city": "Mouth of Wilson",
+    "country": "US",
+    "region": "Virginia",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-oakland-hs",
+    "name": "Oakland High School",
+    "city": "Oakland",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-oakland-tech",
+    "name": "Oakland Technical High School",
+    "city": "Oakland",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-oklahoma-christian",
+    "name": "Oklahoma Christian School",
+    "city": "Edmond",
+    "country": "US",
+    "region": "Oklahoma",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-good-counsel",
+    "name": "Our Lady of Good Counsel High School",
+    "city": "Olney",
+    "country": "US",
+    "region": "Maryland",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-overbrook-philly",
+    "name": "Overbrook High School",
+    "city": "Philadelphia",
+    "country": "US",
+    "region": "Pennsylvania",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-035",
+    "name": "Parry Sound High School",
+    "city": "Parry Sound",
+    "country": "CA",
+    "region": "Ontario",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-paul-vi",
+    "name": "Paul VI Catholic High School",
+    "city": "Fairfax",
+    "country": "US",
+    "region": "Virginia",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-peoria-central-high-school",
+    "name": "Peoria Central HS",
+    "city": "",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-perspective-charter",
+    "name": "Perspective Charter Schools",
+    "city": "Chicago",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-phillips-andover",
+    "name": "Phillips Academy Andover",
+    "city": "Andover",
+    "country": "US",
+    "region": "Massachusetts",
+    "sportFocus": [
+      "hockey",
+      "basketball"
+    ],
+    "leagues": [
+      "NHL",
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-plano-west",
+    "name": "Plano West Senior High School",
+    "city": "Plano",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-014",
+    "name": "Pleasant Valley High School",
+    "city": "Chico",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-polytechnic-high-school",
+    "name": "Polytechnic HS",
+    "city": "",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-prolific-prep",
+    "name": "Prolific Prep",
+    "city": "Napa",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-proviso-east",
+    "name": "Proviso East High School",
+    "city": "Maywood",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-rainier-beach",
+    "name": "Rainier Beach High School",
+    "city": "Seattle",
+    "country": "US",
+    "region": "Washington",
+    "sportFocus": [
+      "basketball",
+      "football"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-rancho-bernardo",
+    "name": "Rancho Bernardo High School",
+    "city": "San Diego",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-richards",
+    "name": "Richards High School",
+    "city": "Oak Lawn",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-012",
+    "name": "Ringgold High School",
+    "city": "Monongahela",
+    "country": "US",
+    "region": "Pennsylvania",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-cole-san-antonio",
+    "name": "Robert G. Cole High School",
+    "city": "San Antonio",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-roman-catholic",
+    "name": "Roman Catholic High School",
+    "city": "Philadelphia",
+    "country": "US",
+    "region": "Pennsylvania",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-025",
+    "name": "Ross Sheppard High School",
+    "city": "Edmonton",
+    "country": "CA",
+    "region": "Alberta",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-030",
+    "name": "Röntgen-Gymnasium Würzburg",
+    "city": "Würzburg",
+    "country": "DE",
+    "region": "Bavaria",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-sacramento-hs",
+    "name": "Sacramento High School",
+    "city": "Sacramento",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-salesian-richmond",
+    "name": "Salesian College Preparatory",
+    "city": "Richmond",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-salesianum",
+    "name": "Salesianum School",
+    "city": "Wilmington",
+    "country": "US",
+    "region": "Delaware",
+    "sportFocus": [
+      "football",
+      "basketball"
+    ],
+    "leagues": [
+      "NFL",
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-sarasota-hs",
+    "name": "Sarasota High School",
+    "city": "Sarasota",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-selects-hockey",
+    "name": "Selects Hockey Academy",
+    "city": "South Kent",
+    "country": "US",
+    "region": "Connecticut",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-servite",
+    "name": "Servite High School",
+    "city": "Anaheim",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-026",
+    "name": "Shattuck-Saint Mary's School",
+    "city": "Faribault",
+    "country": "US",
+    "region": "Minnesota",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-sierra-canyon",
+    "name": "Sierra Canyon School",
+    "city": "Chatsworth",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-simeon",
+    "name": "Simeon Career Academy",
+    "city": "Chicago",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-040",
+    "name": "Skellefteå Gymnasium",
+    "city": "Skellefteå",
+    "country": "SE",
+    "region": "Västerbotten",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-south-kent",
+    "name": "South Kent School",
+    "city": "South Kent",
+    "country": "US",
+    "region": "Connecticut",
+    "sportFocus": [
+      "hockey",
+      "basketball"
+    ],
+    "leagues": [
+      "NHL",
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-south-philadelphia-high-school",
+    "name": "South Philadelphia HS",
+    "city": "",
+    "country": "US",
+    "region": "Pennsylvania",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-southlake-carroll",
+    "name": "Southlake Carroll High School",
+    "city": "Southlake",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-007",
+    "name": "Springs Valley High School",
+    "city": "French Lick",
+    "country": "US",
+    "region": "Indiana",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-neumann-goretti",
+    "name": "Ss. Neumann-Goretti High School",
+    "city": "Philadelphia",
+    "country": "US",
+    "region": "Pennsylvania",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-st-andrews-coll",
+    "name": "St. Andrew's College",
+    "city": "Aurora",
+    "country": "CA",
+    "region": "Ontario",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-st-anthony",
+    "name": "St. Anthony High School",
+    "city": "Jersey City",
+    "country": "US",
+    "region": "New Jersey",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-st-augustine-no",
+    "name": "St. Augustine High School",
+    "city": "New Orleans",
+    "country": "US",
+    "region": "Louisiana",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-st-benedicts-prep",
+    "name": "St. Benedict's Prep",
+    "city": "Newark",
+    "country": "US",
+    "region": "New Jersey",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-st-edward-oh",
+    "name": "St. Edward High School",
+    "city": "Lakewood",
+    "country": "US",
+    "region": "Ohio",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-st-frances-baltimore",
+    "name": "St. Frances Academy",
+    "city": "Baltimore",
+    "country": "US",
+    "region": "Maryland",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-027",
+    "name": "St. Francis High School",
+    "city": "Buffalo",
+    "country": "US",
+    "region": "New York",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-st-francis-prep",
+    "name": "St. Francis Preparatory School",
+    "city": "Fresh Meadows",
+    "country": "US",
+    "region": "New York",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-st-ignatius-chicago",
+    "name": "St. Ignatius College Prep",
+    "city": "Chicago",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-041",
+    "name": "St. Ignatius College Preparatory",
+    "city": "San Francisco",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NFL",
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-st-john-bosco",
+    "name": "St. John Bosco High School",
+    "city": "Bellflower",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-st-johns-dc",
+    "name": "St. John's College High School",
+    "city": "Washington",
+    "country": "US",
+    "region": "District of Columbia",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-st-joseph-metuchen",
+    "name": "St. Joseph High School",
+    "city": "Metuchen",
+    "country": "US",
+    "region": "New Jersey",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-st-josephs-prep",
+    "name": "St. Joseph's Preparatory School",
+    "city": "Philadelphia",
+    "country": "US",
+    "region": "Pennsylvania",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-st-marks-texas",
+    "name": "St. Mark's School of Texas",
+    "city": "Dallas",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NFL",
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-st-marys-phoenix",
+    "name": "St. Mary's High School",
+    "city": "Phoenix",
+    "country": "US",
+    "region": "Arizona",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-020",
+    "name": "St. Mary's Industrial School",
+    "city": "Baltimore",
+    "country": "US",
+    "region": "Maryland",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ],
+    "founded": 1866
+  },
+  {
+    "id": "s-029",
+    "name": "St. Michael's University School",
+    "city": "Victoria",
+    "country": "CA",
+    "region": "British Columbia",
+    "sportFocus": [
+      "basketball",
+      "soccer"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-st-patrick-nj",
+    "name": "St. Patrick High School",
+    "city": "Elizabeth",
+    "country": "US",
+    "region": "New Jersey",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-st-raymonds",
+    "name": "St. Raymond High School for Boys",
+    "city": "Bronx",
+    "country": "US",
+    "region": "New York",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-st-rita",
+    "name": "St. Rita of Cascia High School",
+    "city": "Chicago",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball",
+      "football"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-st-thomas-aquinas",
+    "name": "St. Thomas Aquinas High School",
+    "city": "Fort Lauderdale",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NFL",
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-001",
+    "name": "St. Vincent-St. Mary High School",
+    "city": "Akron",
+    "country": "US",
+    "region": "Ohio",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-st-xavier-cincinnati",
+    "name": "St. Xavier High School",
+    "city": "Cincinnati",
+    "country": "US",
+    "region": "Ohio",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-st-xavier-louisville",
+    "name": "St. Xavier High School",
+    "city": "Louisville",
+    "country": "US",
+    "region": "Kentucky",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-sunrise-christian",
+    "name": "Sunrise Christian Academy",
+    "city": "Bel Aire",
+    "country": "US",
+    "region": "Kansas",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-susan-miller-dorsey",
+    "name": "Susan Miller Dorsey High School",
+    "city": "Los Angeles",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-sw-atlanta-christian-academy",
+    "name": "SW Atlanta Christian Academy",
+    "city": "",
+    "country": "US",
+    "region": "Georgia",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-hill-academy",
+    "name": "The Hill Academy",
+    "city": "Vaughan",
+    "country": "CA",
+    "region": "Ontario",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-winchendon",
+    "name": "The Winchendon School",
+    "city": "Winchendon",
+    "country": "US",
+    "region": "Massachusetts",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-thornwood-high-school",
+    "name": "Thornwood HS",
+    "city": "",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-towson-catholic",
+    "name": "Towson Catholic High School",
+    "city": "Baltimore",
+    "country": "US",
+    "region": "Maryland",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-trinity-louisville",
+    "name": "Trinity High School",
+    "city": "Louisville",
+    "country": "US",
+    "region": "Kentucky",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-tuley-high-school",
+    "name": "Tuley HS",
+    "city": "",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-union-ok",
+    "name": "Union High School",
+    "city": "Tulsa",
+    "country": "US",
+    "region": "Oklahoma",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-valdosta",
+    "name": "Valdosta High School",
+    "city": "Valdosta",
+    "country": "US",
+    "region": "Georgia",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-venice-fl",
+    "name": "Venice High School",
+    "city": "Venice",
+    "country": "US",
+    "region": "Florida",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-warren-central-in",
+    "name": "Warren Central High School",
+    "city": "Indianapolis",
+    "country": "US",
+    "region": "Indiana",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-wasatch-academy",
+    "name": "Wasatch Academy",
+    "city": "Mt. Pleasant",
+    "country": "US",
+    "region": "Utah",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-massillon",
+    "name": "Washington High School",
+    "city": "Massillon",
+    "country": "US",
+    "region": "Ohio",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-weaver-high-school",
+    "name": "Weaver HS",
+    "city": "",
+    "country": "US",
+    "region": "Connecticut",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-west-forsyth",
+    "name": "West Forsyth High School",
+    "city": "Clemmons",
+    "country": "US",
+    "region": "North Carolina",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-westbury-christian-high-school",
+    "name": "Westbury Christian HS",
+    "city": "",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "basketball",
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NBA",
+      "NFL",
+      "MLB",
+      "NHL"
+    ],
+    "metadata": {
+      "addedFrom": "education_affiliations",
+      "playerCount": 1
+    }
+  },
+  {
+    "id": "s-westchester-la",
+    "name": "Westchester High School",
+    "city": "Los Angeles",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-westlake-ohio",
+    "name": "Westlake High School",
+    "city": "Westlake",
+    "country": "US",
+    "region": "Ohio",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-westlake-austin",
+    "name": "Westlake High School",
+    "city": "Austin",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football"
+    ],
+    "leagues": [
+      "NFL"
+    ]
+  },
+  {
+    "id": "s-015",
+    "name": "Whitehouse High School",
+    "city": "Whitehouse",
+    "country": "US",
+    "region": "Texas",
+    "sportFocus": [
+      "football",
+      "baseball"
+    ],
+    "leagues": [
+      "NFL",
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-whitney-young",
+    "name": "Whitney Young Magnet High School",
+    "city": "Chicago",
+    "country": "US",
+    "region": "Illinois",
+    "sportFocus": [
+      "basketball"
+    ],
+    "leagues": [
+      "NBA"
+    ]
+  },
+  {
+    "id": "s-hart-high",
+    "name": "William S. Hart High School",
+    "city": "Santa Clarita",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-woodrow-wilson-lb",
+    "name": "Woodrow Wilson Classical High School",
+    "city": "Long Beach",
+    "country": "US",
+    "region": "California",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  },
+  {
+    "id": "s-028",
+    "name": "École Secondaire Antoine-de-Saint-Exupéry",
+    "city": "Repentigny",
+    "country": "CA",
+    "region": "Quebec",
+    "sportFocus": [
+      "hockey"
+    ],
+    "leagues": [
+      "NHL"
+    ]
+  },
+  {
+    "id": "s-034",
+    "name": "École Secondaire Polyvalente Nicolas-Garnier",
+    "city": "Amos",
+    "country": "CA",
+    "region": "Quebec",
+    "sportFocus": [
+      "baseball"
+    ],
+    "leagues": [
+      "MLB"
+    ]
+  }
 ]
